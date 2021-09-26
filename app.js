@@ -1,4 +1,14 @@
 
+let clickText = document.getElementsByClassName("item-text");
+let dispText = document.getElementById("display-text-hidden");
+
+
+for (let i = 0; i < clickText.length; i++) {
+  clickText[i].addEventListener("click", function () {
+    dispText.innerHTML = clickText[i].innerHTML;
+    dispText.style.display = "block";
+  });
+}
 
 
 
@@ -33,13 +43,3 @@ document.getElementById('button-add').addEventListener("click", function () {
 
 })
 
-let clickText = document.getElementsByClassName("item-text");
-let dispText = document.getElementById("display-text-hidden");
-
-
-for (let i = 0; i < clickText.length; i++) {
-  clickText[i].addEventListener("click", function () {
-    dispText.innerHTML = clickText[i].innerHTML;
-    dispText.style.display = "block";
-  });
-}

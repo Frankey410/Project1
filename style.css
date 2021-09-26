@@ -37,7 +37,13 @@ body {
   background-color: skyblue;
 }
 
-#button {
+#button-add {
+  position: relative;
+  left: 675px;
+  bottom: 400px;
+}
+
+#button-remove {
   position: relative;
   left: 675px;
   bottom: 400px;
